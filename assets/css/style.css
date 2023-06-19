@@ -1,0 +1,179 @@
+* {
+/*The box-sizing function creates the type of parent container for the entire page here.*/
+    box-sizing: border-box;
+/*The padding increases the space between each of the individual containers on the
+browser. Being that it is set to zero, it creates no additional space between each of the containers
+and allows their containers to reach the limits of each container.*/
+    padding: 0px;
+/*The margin is 0 here so it allows the container to extend to the farthest limits of any
+device's screen on the browser. Deleting this value creates a default margin which is roughly 2.5px.*/
+    margin: 0px;
+}
+
+/*This function sets the background color for the entire page.*/
+body {
+    background-color: #d9dcd6;
+}
+/*This class identifier changes the properties within the main header container.*/
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/*This class identifier changes the properties of those classified in the index.html file as h1.
+These class attributes specifically allows us to set a width and height on the element. This one
+specifically sets the size of the font of the text.*/
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/*This class attribute specifically changes the color of the "seo" in Horiseon to play on the idea
+that this website is to be used for "Search Enginer Optimization".*/
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+/*This class attribute does the following: creates padding from the top of the container and margin
+from the right of the container so the links are displayed at a satisfactory position on the page. It
+floats the links to the right side so not to clutter the header. It establishes the font types and size.
+And it sets extra fonts depending on what the end user's device has available to view. */
+.header nav {
+    padding-top: 20px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/*This tells us that the list is not going to need to be placed in any particular order.*/
+.header nav ul {
+    list-style-type: none;
+}
+
+/*This allows for the items in the navigation bar at the top of the screen to be spread more 
+evenly and not looked so jambed together*/
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*This allows the developer to set the type of font characteristics within the nav bar.*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*This section allows us to manipulate the font characteristics where we have identified paragraphs
+in our index.html file.*/
+p {
+    font-size: 16px;
+}
+
+/*This section allows us to manipulate the container with the first image on the page, how much of
+that image we want to display at any given time, and the background associated with that container.*/
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*Within the index.html file, we identified float classes within the images that are linked to this
+html. We added the direction of the float to decide where within its container we want the image to sit.*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/*Same as above just floating to the right to create some diverse ordering.*/
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*Any changes to this are attributed to all of the items under the div.content section within our 
+index.html file. Here, we are specifically showing we want to force the width of these containers 
+down to 75% of the width of the end user's screen to give space for the "aside".*/
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*This allows us to manipulate */
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/*This group of elements allows us to manipulate all of the text within the entire "aside" section.*/
+.benefit-lead,
+.benefit-brand,
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/*This group of elements allows us to manipulate the text within the h3 header of the "aside" section.*/
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+/*This group of elements allows us to manipulate the images within the "aside" section.*/
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+/*This group of elements allows us to manipulate the three articles' container as a whole.*/
+.search-engine-optimization,
+.online-reputation-management,
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/*This group of elements allows us to manipulate the images within the three articles identically.*/
+.search-engine-optimization img,
+.online-reputation-management img,
+.social-media-marketing img {
+    max-height: 200px;
+}
+/*This group of elements allows us to manipulate the h2 header within the three articles identically.*/
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2  {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*This group of elements allows us to manipulate the design of the footer.*/
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/*This allows us to manipulate the font-size within the h2 of the footer.*/
+.footer h2 {
+    font-size: 20px;
+}
